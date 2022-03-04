@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* --------------
+ This is our header section 
+ ----------------------- */
+.header-section {
+  background-color: #2d25a0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.header-section h1 {
+  width: 485px;
+  height: 230px;
+  font-size: 64px;
+  color: #ffffff;
+}
+/*---------------
+     button style 
+----------------- */
+.live-sports-btn {
+  background-color: #e02c6d;
+  color: #ffffff;
+  border: none;
+  width: 168px;
+  height: 44px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* ---------------
+this style for button tooltip 
+--------------------- */
+.tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+.live-sports-btn:hover .tooltiptext {
+  visibility: visible;
+}
+
+.header-banner img {
+  width: 556.01px;
+  transition: transform 0.5s ease;
+}
+.header-banner img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+/*-----------
+this is font awesome style 
+----------------- */
+.fa-arrow-right {
+  font-size: 14px;
+  padding-left: 5px;
+}
+/* ----------------
+Header section End 
+------------------ */
+/*-----------------------
+ This is our Player List 
+--------------------------- */
+.player-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 70px 80px;
+}
+.player {
+  width: 330px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  margin: 20px 30px;
+}
+.player img {
+  width: 300px;
+  padding: 15px;
+}
+.player h1 {
+  font-size: 28px;
+  color: #18191f;
+  padding-left: 15px;
+  margin: 0;
+}
+.player p {
+  font-size: 16px;
+  color: #6c6c6c;
+  padding-left: 15px;
+}
+/* ---------------
+Player List End 
+------------------- */
+
+/*-------------
+Match Hightlight  section 
+--------------- */
+
+.highlight-match {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.highlight-details {
+  width: 480px;
+}
+.highlight-details h1 {
+  color: #0a0826;
+  font-size: 48px;
+}
+.highlight-details p {
+  color: #6c6c6c;
+  font-size: 16px;
+}
+.highlight-match-image img {
+  width: 567px;
+  height: 427px;
+}
+/*------------
+Match Highlight Section End 
+---------------------- */
+
+/*---------------
+Footer section Start 
+--------------------- */
+.footer {
+  margin-top: 158px;
+  text-align: center;
+}
+.footer img {
+  width: 483.87px;
+}
+
+li {
+  list-style: none;
+  display: inline;
+}
+li a {
+  color: grey;
+  font-size: 20px;
+  margin: 15px;
+}
+.footer p {
+  padding-left: 40px;
+  margin-bottom: 50px;
+}
+
+/*--------------
+Footer section End 
+------------------ */
+
+/*-------------------
+       responsive for mobile devices 
+------------------- */
+
+@media only screen and (max-width: 688px) {
+  /* -----------
+  header section 
+  ------------ */
+  .container {
+    width: 100%;
+  }
+  .header-section {
+    flex-direction: column;
+  }
+  .header-section h1 {
+    width: 278px;
+    height: 138px;
+    font-size: 36px;
+  }
+  .header-banner img {
+    width: 329px;
+    margin-top: 50px;
+  }
+
+  /* -----------------
+  players list 
+  -------------------*/
+
+  .container {
+    width: 100%;
+  }
+  .player-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+    margin-right: 0;
+  }
+
+  /*-------------------- Match highlight
+   ------------------- */
+  .highlight-match {
+    flex-direction: column;
+    margin-left: 25px;
+  }
+  .highlight-match h1 {
+    font-size: 30px;
+  }
+  .highlight-details {
+    width: 328px;
+  }
+  .highlight-match-image img {
+    width: 328px;
+    height: 248px;
+    margin-top: 30px;
+  }
+
+  /* -------------------
+  footer section 
+  ------------------- */
+  .footer {
+    margin-top: 50px;
+  }
+  .footer img {
+    width: 150px;
+  }
+}
+/* -------------
+responsive for tablet 
+--------------------------- */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  /*--------------------
+   header section 
+  ----------------------- */
+  .container {
+    width: 100%;
+  }
+  .header-section h1 {
+    width: 350px;
+    height: 100px;
+    font-size: 36px;
+  }
+  .header-banner img {
+    width: 400px;
+    margin-top: 50px;
+  }
+  /* --------------------
+ Player list 
+ ----------------------- */
+  .container {
+    width: 100%;
+  }
+  .player-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+    margin-right: 0;
+  }
+  .container {
+    width: 100%;
+  }
+
+  /* ------------------------
+  Match highlight
+   ------------------------- */
+  .highlight-match {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 15%;
+  }
+  .highlight-details {
+    margin-left: 25px;
+  }
+  .highlight-match h1 {
+    font-size: 48px;
+  }
+  .highlight-match p {
+    font-size: 24px;
+  }
+
+  .highlight-match-image img {
+    width: 567px;
+    height: 427px;
+    margin-top: 30px;
+  }
+}
